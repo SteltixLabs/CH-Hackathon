@@ -6,8 +6,8 @@
 /*
  * Your about ViewModel code goes here
  */
-define(['knockout', 'services/book-service', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojbutton', 'ojs/ojinputtext', 'component/book-tile/loader',
-  'ojs/ojtable', 'ojs/ojlabelvalue', 'ojs/ojformlayout', 'ojs/ojknockouttemplateutils', 'ojs/ojarraydataprovider'],
+define(['knockout', 'services/book-service', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojbutton', 'ojs/ojinputtext', 'book-tile/loader',
+  'ojs/ojtable', 'ojs/ojlabelvalue', 'ojs/ojformlayout', 'ojs/ojknockouttemplateutils', 'ojs/ojarraydataprovider','ctb-oda/loader'],
   function (ko, bookService, Bootstrap) {
 
     function AboutViewModel() {

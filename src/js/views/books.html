@@ -3,34 +3,34 @@
  The Universal Permissive License (UPL), Version 1.0
  -->
 <div class="oj-hybrid-padding">
-  <h1>Books Library</h1>
+  <h1 style= "color: #F6A91B; font-size: 24px; font-family: 'Trebuchet MS', sans-serif;">Books Library</h1>
 
   <div>
-    <div>Book Search</div>
-
+    <div class="cutom-button" style="width:200px; color: #D1D2D4; font-size: 18px; font-family: 'Trebuchet MS', sans-serif;">Search </div>
+  </br>
     <oj-form-layout max-columns='4' label-edge='start' label-width="50%">
 
       <div class="searchBlock" class="oj-sm-margin-4x-end oj-flex-item">
 
-        <oj-label style="width:200px" for="text-input-title">Title</oj-label>
+        <oj-label style="width:200px; color: #D1D2D4; font-size: 16px; font-family: 'Trebuchet MS', sans-serif;" for="text-input-title">Title</oj-label>
         <oj-input-text value="{{title}}" id="text-input-title"></oj-input-text>
       </div>
 
       <div class="searchBlock" class="oj-sm-margin-4x-end oj-flex-item">
 
-        <oj-label style="width:200px" for="text-input-author">Author</oj-label>
+        <oj-label style="width:200px; color: #D1D2D4; font-size: 16px; font-family: 'Trebuchet MS', sans-serif;" for="text-input-author">Author</oj-label>
         <oj-input-text value="{{author}}" id="text-input-author"></oj-input-text>
       </div>
 
       <div class="searchBlock" class="oj-sm-margin-4x-end oj-flex-item">
 
-        <oj-label style="width:200px" for="text-input-categories">Categories</oj-label>
+        <oj-label style="width:200px; color: #D1D2D4; font-size: 16px; font-family: 'Trebuchet MS', sans-serif;" for="text-input-categories">Categories</oj-label>
         <oj-input-text value="{{categories}}" id="text-input-categories"></oj-input-text>
       </div>
 
       <div class="searchBlock" class="oj-sm-margin-4x-end oj-flex-item">
 
-        <oj-label style="width:200px" for="text-input-description">Description</oj-label>
+        <oj-label style="width:200px; color: #D1D2D4; font-size: 16px; font-family: 'Trebuchet MS', sans-serif;" for="text-input-description">Description</oj-label>
         <oj-input-text value="{{description}}" id="text-input-description"></oj-input-text>
       </div>
     </oj-form-layout>
@@ -38,7 +38,7 @@
  
 
     <br />
-    <oj-button id='Search' disabled="false" on-oj-action='[[buttonClick]]' display="all">Search</oj-button>
+    <oj-button id='Search' disabled="false" on-oj-action='[[buttonClick]]' display="all" >Search</oj-button>
   </div>
 
 
@@ -56,5 +56,5 @@
 
     </oj-bind-for-each>
   </oj-form-layout>
-
+  <ctb-oda url="oda-fd3ae918721a44eb94c8c3a284c13234-da4.data.digitalassistant.oci.oraclecloud.com" channel-id= "49f5948b-2707-4cc0-9f0a-b5444f22d63e"></ctb-oda>
 </div>

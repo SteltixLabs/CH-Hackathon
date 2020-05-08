@@ -1,0 +1,39 @@
+<div class="book-block">
+  
+    <oj-button chroming="borderless" id='solidPushIcon' class="delete-button" display="icons">
+      <span slot='startIcon' class="oj-fwk-icon oj-fwk-icon-cross02 delete-button-icon"></span>
+      Delete Book
+    </oj-button>
+
+  <div class="book-title">
+    <oj-bind-text value="[[title]]"></oj-bind-text>
+  </div>
+
+  <span id="bookId" style="display: none;">
+    <oj-bind-text value="[[bookId]]"></oj-bind-text>
+  </span>
+  <span>
+    <img class="book-image" :src="[[smallThumbnail]]" />
+  </span>
+  <div style="text-align: center; margin-top: 1px">
+    <span class="book-heading">Authors: </span>
+    <oj-bind-for-each data="[[authors]]">
+
+      <template>
+        <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+      </template>
+    </oj-bind-for-each>
+    <br />
+    <oj-bind-if test="[[categories !== undefined]]">
+      <span class="book-heading">Categories:</span>
+      <oj-bind-for-each data="[[categories]]">
+
+        <template>
+          <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+        </template>
+      </oj-bind-for-each>
+    </oj-bind-if>
+
+  </div>
+
+</div>

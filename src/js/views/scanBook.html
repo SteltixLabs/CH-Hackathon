@@ -3,16 +3,16 @@
  The Universal Permissive License (UPL), Version 1.0
  -->
  <div class="oj-hybrid-padding">
-    <h1>Add Book</h1>
+    <h1 style="color:  #F6A91B;">Add Book</h1>
     <div>
-      <div>Enter or Scan ISBN Number</div>
-      <oj-input-text value="{{isbn}}" id="text-input"></oj-input-text>
+      <div style="width:200px; color: #D1D2D4; font-size: 16px; font-family: 'Trebuchet MS', sans-serif;" >Enter or Scan ISBN Number</div>
+      <oj-input-text value="{{isbn}}" id="text-input" style="margin-top: 20px; margin-bottom: 12px;"></oj-input-text>
       <br />
       <oj-bind-if test="[[hasBook() == true]]">
          <book-tile on-oj-action='[[buttonClick]]' book="{{scannedBook}}"></book-tile> 
       </oj-bind-if>
        <oj-bind-if test="[[hasBook() == false]]">
-        <span>No volume found for the ISBN number.</span>
+        <span style="width:200px; color: #D1D2D4; font-size: 14px; font-family: 'Trebuchet MS', sans-serif;">No volume found for the ISBN number.</span>
       </oj-bind-if> 
 
       

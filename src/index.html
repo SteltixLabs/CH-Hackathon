@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/app.css" type="text/css"/>
 
   </head>
-  <body class="oj-web-applayout-body">
+  <body class="oj-web-applayout-body" style="background-color: #0C3254;">
     <!-- Template for rendering navigation items -->
     <script type="text/html" id="navTemplate">
       <li><a href="#">
@@ -32,13 +32,13 @@
       </a></li>
     </script>
 
-    <div id="globalBody" class="oj-web-applayout-page">
+    <div id="globalBody" class="oj-web-applayout-page" style="color: #D1D2D4;">
 
       <div id="announce" tabindex="-1" class="sendOffScreen" :aria-live="[[manner]]" aria-atomic="true">
           <p id="ariaLiveMessage"><oj-bind-text value="[[message]]"></oj-bind-text></p>
       </div>
 
-      <header role="banner" class="oj-web-applayout-header">
+      <header role="banner" class="oj-web-applayout-header" style="background-color: #ffffff;">
         <div class="oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center">
           <div class="oj-flex-bar-middle oj-sm-align-items-baseline">
             <img class="" src="css/images/CH_logo.gif"/>
@@ -60,7 +60,7 @@
             </oj-toolbar>
           </div>
         </div>
-        <div role="navigation" class="oj-web-applayout-max-width oj-web-applayout-navbar">
+        <div role="navigation" class="oj-web-applayout-max-width oj-web-applayout-navbar"" >
           <oj-navigation-list id="navList" data="[[navDataProvider]]"
                               :class="[[{'oj-md-condense oj-md-justify-content-flex-end': !smScreen()}]]"
                               display="[[smScreen() ? 'icons' : 'all']]"
@@ -92,8 +92,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
     <script type="text/javascript" src="js/libs/require/require.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
   </body>
-
-
 </html>

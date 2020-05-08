@@ -1,0 +1,53 @@
+book-tile:not(.oj-complete){
+  visibility: hidden;
+}
+
+/* book-tile {
+
+} */
+
+.book-block {
+	width: 300px; 
+	height: 350px; 
+	border: 1px solid silver;
+	border-radius: 20px;
+	box-shadow: 3px 2px lightgray;
+	margin-top: 7px;
+	word-wrap: break-word;
+}
+
+.book-title {
+	text-align: center;
+	font-weight: 600;
+	font-size: 14px;
+	width: 300px;
+	/* white-space: nowrap; */
+	overflow: hidden;
+	/* margin-top: 7px; */
+   /* text-overflow: ellipsis; */
+  }
+  
+  .book-image {
+	width: 120px;
+	box-shadow: 4px 4px lightgray;
+	margin-left: 85px;
+	margin-top: 10px;
+	margin-bottom: 4px;
+  }
+
+
+
+.book-heading {
+	margin-bottom: 10px;
+	text-align: left;
+	font-weight: 600;
+}
+
+.delete-button-icon {
+	color: red !important;
+	
+}
+
+.delete-button {
+	float: right;
+}

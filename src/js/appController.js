@@ -33,11 +33,8 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojresponsiveutils', 'ojs/
        // Router setup
        self.router = Router.rootInstance;
        self.router.configure({
-         'dashboard': {label: 'Dashboard', isDefault: true},
-         'scanBook': {label: 'Scan Book'},
-         'books': {label: 'Books'},
-         'educators': {label: 'Educators'},
-         'learners': {label: 'Learners'}
+        'books': {label: 'Books', isDefault: true},
+        'scanBook': {label: 'Scan Book'},
        });
       Router.defaults['urlAdapter'] = new Router.urlParamAdapter();
 
@@ -53,16 +50,10 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojresponsiveutils', 'ojs/
 
       // Navigation setup
       var navData = [
-      {name: 'Dashboard', id: 'dashboard',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'},
-       {name: 'Add Book', id: 'scanBook',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-catalog-icon-24'},
       {name: 'Books', id: 'books',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24'},
-      {name: 'Educators', id: 'educators',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'},
-      {name: 'Learners', id: 'learners',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'}
+        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24'},
+       {name: 'Add Book', id: 'scanBook',
+       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24'},
       ];
       self.navDataProvider = new ArrayDataProvider(navData, {keyAttributes: 'id'});
 
